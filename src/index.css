@@ -41,7 +41,7 @@
 }
 
 .content {
-    @apply inline-block mt-[33px] w-[340px] text-[16px] text-[#898989] font-medium overflow-hidden h-0 transition-opacity duration-300
+    @apply inline-block mt-[33px] px-[24px] w-[340px] text-[16px] text-[#898989] font-medium overflow-hidden h-0 transition-opacity duration-300
 }
 
 .content {

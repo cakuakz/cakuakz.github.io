@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.App {
+    font-family: 'Poppins';
+}
+
+
+
+.links {
+    @apply ml-[40px] relative
+}
+
+.links::after {
+    @apply content-[''] bg-[#0F0F0F] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+}
+
+.links:hover::after {
+    @apply w-[100%]
+}
+
+
+.skill-inner:hover {
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.arrow-sided {
+    color: #47689C;
+    cursor: pointer;
+    transform: rotate(49.275deg);
+}
+
+.content {
+    @apply inline-block mt-[33px] w-[340px] text-[16px] text-[#898989] font-medium overflow-hidden h-0 transition-opacity duration-300
+}
+
+.content {
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+    height: auto;
+    width: 340px;
+    transition-duration: 300ms;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}

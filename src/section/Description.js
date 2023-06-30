@@ -1,6 +1,6 @@
 const Description = () => {
     return ( 
-        <div className="bg-black py-[144px]  subpixel-antialiased">
+        <div className="bg-black py-[144px] px-[48px] subpixel-antialiased">
             <h1 className="text-white text-[55px] font-semibold text-center">Let’s get to know<br/> about me!</h1>
 
             <p className="text-[#CDCCCB] text-[24px] text-center font-medium mt-[74px]">Third-year Information Systems student with hard-working and highly<br/>dedicated traits. Responsible person with interest in Android Software<br/>Development, and Website Development. Experienced in several<br/>projects in Website Development.</p>

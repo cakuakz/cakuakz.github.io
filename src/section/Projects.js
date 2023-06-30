@@ -8,7 +8,7 @@ const Projects = () => {
 // const [dataProject] = React.useState(projectData)
 
     return ( 
-        <div className="flex flex-col mt-[51px]">
+        <div className="flex flex-col mt-[51px]" id="projects">
             <h1 className="text-center text-[50px] font-semibold">Latest Project</h1>
             <ProjectCard />
         </div>

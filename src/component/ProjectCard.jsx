@@ -54,7 +54,7 @@ function ProjectCard() {
     const [dataProject] = React.useState(projectData)
 
     return (
-        <div className="mt-[103px] justify-items-center mb-[250px]">
+        <div className="mt-[103px] justify-items-center mb-[200px]">
             <Slider {...settings}>
             {dataProject.map((item, i) => (
                 <div className="group mt-[80px]">        

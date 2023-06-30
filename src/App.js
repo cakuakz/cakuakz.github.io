@@ -11,12 +11,12 @@ import './App.css';
 function App() {
   return (
     <div className="App scroll-smooth">
-      <Header />
-        <About />
-        <Description />
-        <Projects />
-        <Skills />
-        <Footer />
+          <Header />
+          <About />
+          <Description />
+          <Projects /> 
+          <Skills />
+          <Footer />
     </div>
   );
 }

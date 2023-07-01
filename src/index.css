@@ -15,7 +15,39 @@ html {
     font-family: 'Poppins';
 }
 
+.name {
+    position: relative;
+    width: max-content;
+    letter-spacing: 0.5px;
+}
 
+.name::before,
+.name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.name::before {
+    background: white;
+    animation: typewriter 2s ease-in 1s forwards;
+}
+
+.name::after {
+    width: 0.2rem;
+    height: auto;
+    background: white;
+    animation: typewriter 2s ease-in 1s forwards
+}
+
+@keyframes typewriter {
+    to { 
+        left: 100%; 
+    }
+}
 
 .links {
     @apply ml-[40px] relative

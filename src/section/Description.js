@@ -8,7 +8,7 @@ const Description = () => {
 
                 <div className="grid xl:grid-cols-2 mt-[75px] items-center">
                     <div className="flex justify-center xl:justify-end xl:pr-[18px] space-x-[14px]">
-                        <h1 className="text-[#A8BCDB] text-center text-[64px] font-semibold">4</h1>
+                        <h1 className="text-[#A8BCDB] text-center text-[64px] font-semibold">6</h1>
                         <p className="text-[#CDCCCB] pt-4 text-[22px]">Completed<br/> Projects</p>
                     </div>
                     <div className="flex justify-center xl:justify-start xl:pl-[30px] space-x-[14px]">

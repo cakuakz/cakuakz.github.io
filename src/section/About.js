@@ -1,19 +1,24 @@
+import { useState } from "react";
+import NumberPortfolio from "../component/NumberPortfolio";
+import SkillLists from "../component/SkillLists";
+import LANGUAGE from "../utils/languange";
+import skills from "../data/skills";
 
 const About = () => {
+
+    const [skillData] = useState(skills)
+
     return ( 
-        <div className="grid xl:grid-cols-2 pt-[169px] items-center mb-[169px] text-center xl:text-start" id="about" data-aos="fade-up" data-aos-duration="3000">
-            <div className="px-[20px] xl:pl-[160px] pt-[45px] space-y-[31px]">
-                <div>
-                    <span className="name text-[54px] font-semibold">Rafi Irfansyah</span>
-                    <h1 className="name text-[54px] font-semibold relative">is here!</h1>
-                </div>
-                <h3 className="text-[28px] text-slate-400">Hardworking person interested in Website Developer, and Software Developer.</h3>
-                
+        <div className="flex flex-col justify-center text-center mt-40" id="about">
+            <div className="flex justify-between px-60 lg:px-80 mb-7">
+                {LANGUAGE.ABOUT_PAGE.ABOUT.map((item, index) => (
+                    <NumberPortfolio title={item.TITLE} number={item.NUMBER} key={index}/>
+                ))}
             </div>
-            <div className="pl-[68px] lg:pl-[150px] xl:pl-[200px] 2xl:pl-[250px] pt-[100px] w-[85%] lg:pt-0 lg:opacity-100 lg:items-center">
-                <img src="profilepict.png" alt="" className="bg-clip-border bg-gradient-to-t from-white to-[#859FC7] rounded-t-full" />
-            </div>
-            
+            <p className="text-[#b597f2] text-base mb-6">{LANGUAGE.HOME.SHORTNAME}</p>
+            <h1 className="text-6xl text-[#404040] font-semibold mb-8">{LANGUAGE.ABOUT_PAGE.TITLE}</h1>
+            <p className=" text-sm text-center font-normal text-[#a59c95] mb-16">{LANGUAGE.ABOUT_PAGE.SUBTITLE}</p>
+            <SkillLists skills={skillData}/>
         </div>
      );
 }

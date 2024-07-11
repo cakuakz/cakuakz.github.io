@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
@@ -114,3 +111,29 @@ html {
     transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 
+.arrow-button {
+    background-color: #79DCFF;
+    max-width: 20rem; 
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+    animation-duration: 100ms;
+}
+
+.arrow-button:hover {
+    transform: translateY(-0.25rem);
+    opacity: 85%;
+}
+
+.right-arrow-portfolio {
+    transition: transform 0.2s ease-in-out; 
+}
+
+.arrow-button:hover .right-arrow-portfolio {
+    transform: translateX(0.25rem);
+}

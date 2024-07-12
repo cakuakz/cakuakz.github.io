@@ -9,6 +9,7 @@ const PortfolioCardList = ({ card }) => {
                     image={cardItem.image}
                     description={cardItem.description}
                     stackPict={cardItem.stackPict}
+                    link={cardItem.link}
                     dataAos="fade-right"
                 />
             ))}

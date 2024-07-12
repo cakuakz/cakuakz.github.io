@@ -1,12 +1,13 @@
 import { Card, CardBody, CardFooter, CardHeader, Image } from "@nextui-org/react";
 
-const PortfolioCard = ({ title, image, description, dataAos, stackPict }) => {
+const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) => {
     return ( 
         <Card
             isPressable 
             className="transition ease-in-out py-4 px-4 max-w-sm hover:-translate-y-1 z-0" 
             data-aos={dataAos}
             isHoverable
+            onPress={() => window.location.href = link}
         >
             <CardHeader className="pb-0 pt-2 flex-col items-start">
                 <p className="text-tiny mb-3 font-normal">My Project</p>

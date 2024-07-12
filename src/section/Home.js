@@ -3,6 +3,14 @@ import LANGUAGE from "../utils/languange";
 import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
+
+    const handleDownload = () => {
+        const link = document.createElement('a')
+        link.href = `${process.env.PUBLIC_URL}/rafiresume.pdf`
+        link.download = 'rafiresume.pdf'
+        link.click()
+      }
+
     return ( 
         <div className="flex flex-col">
             <Navbar />
@@ -10,7 +18,7 @@ const Home = () => {
                 <div className="px-[20px] xl:pl-[160px]">
                     <span className="name text-[54px] font-semibold">{LANGUAGE.HOME.SHORTNAME}</span>
                     <h3 className="text-[28px] text-slate-400 mb-10">{LANGUAGE.HOME.BIO_DESC}</h3>
-                    <button className="arrow-button">
+                    <button className="arrow-button" onClick={handleDownload}>
                         <p className="text-medium font-normal">Download CV</p>
                         <FaArrowRight className="right-arrow-portfolio"/>
                     </button>

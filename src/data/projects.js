@@ -16,7 +16,7 @@ import {
 const project = [
     {
         title: 'Kalma Project',
-        description: 'This project is to make a company profile website for PT. Jangkar Sampuran Berkat, an indonesian company which serve the one stop ship and logistic services in indonesia port and area.',
+        description: `This project is a mobile-based application designed to provide users with a self-healing experience for managing their mental health. It is my final project for obtaining a bachelor's degree. The project is built using Flutter for mobile, Express.js for the backend, and Next.js for the admin website.`,
         image: 'project_image.png',
         stackPict: [
             <SiFlutter />,
@@ -24,7 +24,7 @@ const project = [
             <BiLogoPostgresql />,
             <SiPrisma />
         ],
-        link: 'https://github.com/cakuakz/JSB-Agency.git'
+        link: 'https://github.com/orgs/Kalma-Project/repositories'
     },
     {
         title: 'AMATI Indonesia Mobile App',

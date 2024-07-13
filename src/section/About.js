@@ -10,7 +10,7 @@ const About = () => {
 
     return ( 
         <div className="flex flex-col justify-center text-center mt-40" id="about">
-            <div className="flex justify-between px-60 lg:px-80 mb-7">
+            <div className="flex flex-col justify-between px-6 lg:flex-row lg:px-80 mb-7">
                 {LANGUAGE.ABOUT_PAGE.ABOUT.map((item, index) => (
                     <NumberPortfolio title={item.TITLE} number={item.NUMBER} key={index}/>
                 ))}

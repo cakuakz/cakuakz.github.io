@@ -16,8 +16,6 @@ html {
     position: relative;
     width: max-content;
     letter-spacing: 0.5px;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 .name::before,

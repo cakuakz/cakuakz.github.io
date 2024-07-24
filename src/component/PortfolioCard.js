@@ -4,7 +4,7 @@ const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) 
     return ( 
         <Card
             isPressable 
-            className="transition ease-in-out py-4 px-4 max-w-sm hover:-translate-y-1 z-0" 
+            className="p-3 max-w-sm z-0 mb-4 lg:mb-0" 
             data-aos={dataAos}
             isHoverable
             onPress={() => window.location.href = link}
@@ -21,15 +21,15 @@ const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) 
                     width={330}
                 />
                 <p className="text-tiny mb-3 font-normal">{description}</p>
-                <CardFooter className="mt-5 px-0 flex flex-row justify-between">
-                    <p className="text-tiny uppercase font-bold">Stack Used:</p>
-                    <div className="flex flex-row items-center space-x-3">
-                        {stackPict.map((pict) => (
-                            pict
-                        ))}
-                    </div>
-                </CardFooter>
             </CardBody>
+            <CardFooter className="mt-5 px-0 flex flex-row justify-between">
+                <p className="text-tiny uppercase font-bold">Stack Used:</p>
+                <div className="flex flex-row items-center space-x-3">
+                    {stackPict.map((pict) => (
+                        pict
+                    ))}
+                </div>
+            </CardFooter>
         </Card>
      );
 }

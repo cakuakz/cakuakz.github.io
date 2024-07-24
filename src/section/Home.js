@@ -15,7 +15,7 @@ const Home = () => {
         <div className="flex flex-col">
             <Navbar />
             <div className="grid justify-center xl:grid-cols-2 pt-56 items-center text-center xl:text-start" id="home" data-aos="fade-up" data-aos-duration="3000">
-                <div className="flex flex-col items-center lg:items-start px-[20px] xl:pl-[160px]">
+                <div className="flex flex-col items-center text-center lg:items-start lg:text-start px-[20px] xl:pl-[160px]">
                     <span className="name text-[54px] font-semibold">{LANGUAGE.HOME.SHORTNAME}</span>
                     <h3 className="text-[28px] text-slate-400 mb-10">{LANGUAGE.HOME.BIO_DESC}</h3>
                     <button className="arrow-button" onClick={handleDownload}>

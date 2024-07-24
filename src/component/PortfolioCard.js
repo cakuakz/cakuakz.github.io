@@ -4,7 +4,7 @@ const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) 
     return ( 
         <Card
             isPressable 
-            className="p-3 max-w-sm z-0 mb-4 lg:mb-0" 
+            className="p-3 max-w-sm self-center z-0 mb-4 lg:mb-0 lg:self-auto" 
             data-aos={dataAos}
             isHoverable
             onPress={() => window.location.href = link}

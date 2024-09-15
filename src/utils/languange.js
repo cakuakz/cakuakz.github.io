@@ -8,7 +8,7 @@ const LANGUAGE = {
     HOME: {
         SHORTNAME: 'Rafi Irfansyah',
         BIO_DESC: 'Hardworking person interested in Software Developer.',
-        DOWNLOAD_CV: 'DOWNLOAD CV'
+        DOWNLOAD_CV: 'DOWNLOAD RESUME'
     },
     ABOUT_PAGE: {
         ABOUT: [

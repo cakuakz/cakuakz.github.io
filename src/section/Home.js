@@ -1,3 +1,4 @@
+import { capitalCase } from "text-case";
 import LANGUAGE from "../utils/languange";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -16,7 +17,7 @@ const Home = () => {
                 <span className="name text-[54px] font-semibold">{LANGUAGE.HOME.SHORTNAME}</span>
                 <h3 className="text-[28px] text-slate-400 mb-10">{LANGUAGE.HOME.BIO_DESC}</h3>
                 <button className="arrow-button" onClick={handleDownload}>
-                    <p className="text-medium font-normal">Download CV</p>
+                    <p className="text-medium font-normal">{capitalCase(LANGUAGE.HOME.DOWNLOAD_CV)}</p>
                     <FaArrowRight className="right-arrow-portfolio"/>
                 </button>
             </div>

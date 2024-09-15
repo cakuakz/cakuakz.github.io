@@ -1,3 +1,4 @@
+import React from 'react';
 import 'typeface-poppins'; // Import the Poppins font CSS
 import './index.css'
 import './App.css';
@@ -8,22 +9,40 @@ import {NextUIProvider} from "@nextui-org/react";
 import About from './section/About';
 import Portfolio from './section/Portfolio';
 import Footer from './section/Footer';
+import { Route, Routes } from 'react-router-dom';
+import AllPortfolio from './section/AllPortfolio';
+import Navbar from "./Navbar";
 
 
 function App() {
 
   AOS.init();
-
   return (
     <NextUIProvider>
-      <div className="App scroll-smooth max-w-screen overflow-x-hidden">
-          {/* <p>Under Construction</p> */}
-          <Home />
-          <About />
-          <Portfolio />
-          <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route 
+          path='/' 
+          element={
+            <div className="App scroll-smooth max-w-screen overflow-x-hidden">
+              <Home />
+              <About />
+              <Portfolio />
+            </div>
+          }
+        />
+        <Route 
+          path='portfolio/all' 
+          element={
+            <div className='App scroll-smooth max-w-screen overflow-x-hidden'>
+              <AllPortfolio />
+            </div>
+          }
+        />
+      </Routes>
+      <Footer />
     </NextUIProvider>
+    
   );
 }
 

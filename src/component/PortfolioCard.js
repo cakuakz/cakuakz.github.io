@@ -1,6 +1,6 @@
 import { Card, CardBody, CardFooter, CardHeader, Image } from "@nextui-org/react";
 
-const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) => {
+const PortfolioCard = ({ title, projectType, image, description, dataAos, stackPict, link }) => {
     return ( 
         <Card
             isPressable 
@@ -10,7 +10,7 @@ const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) 
             onPress={() => window.location.href = link}
         >
             <CardHeader className="pb-0 pt-2 flex-col items-start">
-                <p className="text-tiny mb-3 font-normal">My Project</p>
+                <p className="text-tiny mb-3 font-normal">{projectType}</p>
                 <h4 className="font-bold text-large">{title}</h4>
             </CardHeader>
             <CardBody className="flex flex-col items-center space-y-5">
@@ -19,10 +19,11 @@ const PortfolioCard = ({ title, image, description, dataAos, stackPict, link }) 
                     className="object-cover rounded-xl"
                     src={image}
                     width={330}
+                    height={70}
                 />
                 <p className="text-tiny mb-3 font-normal">{description}</p>
             </CardBody>
-            <CardFooter className="mt-5 px-0 flex flex-row justify-between">
+            <CardFooter className="mt-5 px-3 flex flex-row justify-between">
                 <p className="text-tiny uppercase font-bold">Stack Used:</p>
                 <div className="flex flex-row items-center space-x-3">
                     {stackPict.map((pict) => (

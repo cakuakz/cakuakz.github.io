@@ -2,7 +2,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "../component/internalIcons";
 
 const Footer = () => {
     return ( 
-        <div className="bg-[#1F1F1F] pt-[122px] pb-[97px] justify-center space-y-[30px]" id="footer">
+        <div className="App bg-[#1F1F1F] py-20 justify-center space-y-[30px]" id="footer">
             <h1 className="text-center font-semibold text-[45px] lg:text-[55px] text-white">Wanna make awesome and<br/>impactful Website?</h1>
             <p className="text-center font-medium text-[14px] lg:text-[22px] text-[#CDCCCB]">Contact Me Through</p>
             <div className="flex flex-row justify-center space-x-[25.32px]">

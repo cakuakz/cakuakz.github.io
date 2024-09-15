@@ -13,7 +13,7 @@ const LANGUAGE = {
     ABOUT_PAGE: {
         ABOUT: [
             {
-                NUMBER: 10,
+                NUMBER: 7,
                 TITLE: 'PROJECTS'
             },
             {
@@ -30,7 +30,7 @@ const LANGUAGE = {
     },
     PORTFOLIO_PAGE: {
         TITLE: 'PORTFOLIO',
-        SUBTITLE: 'Selected Works',
+        SUBTITLE: 'Featured Works',
         DESCRIPTION: 'I want to share some of my works all accross the code language i have learn'
     },
     BUTTON: {

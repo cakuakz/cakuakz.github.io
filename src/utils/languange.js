@@ -33,6 +33,10 @@ const LANGUAGE = {
         SUBTITLE: 'Featured Works',
         DESCRIPTION: 'I want to share some of my works all accross the code language i have learn'
     },
+    PROJECTS: {
+        TITLE: "PROJECTS",
+        SUBTITLE: "SHOWCASE OF MY PROJECTS ON SOFTWARE DEVELOPMENT"
+    },
     BUTTON: {
         SEE_PROJECTS: 'SEE ALL PROJECTS',
         DOWNLOAD_CV: 'DOWNLOAD CV',

@@ -38,7 +38,6 @@ const PortfolioCard = ({ title, projectType, image, description, dataAos, stackP
                         className="object-cover rounded-xl"
                         src={image}
                         width={330}
-                        height={70}
                     />
                     <p className="text-tiny mb-3 font-normal">{description}</p>
                 </CardBody>

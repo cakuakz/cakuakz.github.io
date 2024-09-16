@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'typeface-poppins'; // Import the Poppins font CSS
 import './index.css'
 import './App.css';
@@ -12,11 +12,16 @@ import Footer from './section/Footer';
 import { Route, Routes } from 'react-router-dom';
 import AllPortfolio from './section/AllPortfolio';
 import Navbar from "./Navbar";
+import useSidebar from './utils/hooks/useSidebar';
 
 
 function App() {
+  const { isSidebarVisible } = useSidebar()
 
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <NextUIProvider>
       <Navbar />
@@ -24,7 +29,7 @@ function App() {
         <Route 
           path='/' 
           element={
-            <div className="App scroll-smooth max-w-screen overflow-x-hidden">
+            <div className={`App scroll-smooth max-w-screen overflow-x-hidden ${isSidebarVisible ? 'blur-sm' : 'blur-none'}`}>
               <Home />
               <About />
               <Portfolio />
@@ -34,7 +39,7 @@ function App() {
         <Route 
           path='portfolio/all' 
           element={
-            <div className='App scroll-smooth max-w-screen overflow-x-hidden'>
+            <div className={`App scroll-smooth max-w-screen overflow-x-hidden ${isSidebarVisible ? 'blur-sm' : 'blur-none'}`}>
               <AllPortfolio />
             </div>
           }

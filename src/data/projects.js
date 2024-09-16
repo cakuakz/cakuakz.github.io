@@ -69,7 +69,7 @@ const project = [
             <SiTypescript />,
             <SiTailwindcss />,
         ],
-        link: '#'
+        link: 'https://github.com/cakuakz/JSB-Agency'
     },
     {
         title: 'Monito - Petshop Admin Panel',
@@ -83,7 +83,7 @@ const project = [
             <SiAntdesign />,
             <SiPostgresql />
         ],
-        link: '#'
+        link: 'https://github.com/cakuakz/ecommerce-web'
     },
     {
         title: 'Bang Beli Authentication Page',
@@ -95,7 +95,7 @@ const project = [
             <SiTypescript />,
             <SiExpo />,
         ],
-        link: '#'
+        link: 'https://github.com/cakuakz/BangBeli-LoginPage'
     },
     {
         title: 'Trashure',
@@ -106,7 +106,7 @@ const project = [
             <SiLaravel />,
             <SiPhp />
         ],
-        link: '#'
+        link: 'https://github.com/dmsadjt/trashure'
     }
 ]
 

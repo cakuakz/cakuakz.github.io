@@ -62,6 +62,18 @@ const Navbar = () => {
             >
                 <GiHamburgerMenu />
             </Button>
+            <Switch
+                defaultSelected
+                size="lg"
+                color="warning"
+                classNames={{
+                    base: "lg:hidden z-10 fixed top-4 left-4",
+                    wrapper: "bg-slate-600"
+                }}
+                startContent={<SunIcon />}
+                endContent={<MoonIcon />}
+                onValueChange={handleTheme}
+            />
             <motion.div
                 initial="closed"
                 animate={isSidebarVisible ? "open" : "closed"}

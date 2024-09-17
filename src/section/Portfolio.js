@@ -10,9 +10,9 @@ const Portfolio = () => {
     const [cardData] = useState(project)
 
     return ( 
-        <div className="flex flex-col items-center text-center mt-40" id="portfolio">
+        <div className="flex flex-col items-center text-center mt-32" id="portfolio">
             <p className="text-[#b597f2] text-base mb-6">{LANGUAGE.PORTFOLIO_PAGE.TITLE}</p>
-            <h1 className="text-6xl text-[#404040] font-semibold mb-8">{LANGUAGE.PORTFOLIO_PAGE.SUBTITLE}</h1>
+            <h1 className="text-6xl text-[#404040] dark:text-[#dcf6ff] font-semibold mb-8">{LANGUAGE.PORTFOLIO_PAGE.SUBTITLE}</h1>
             <p className=" text-sm text-center font-normal text-[#a59c95] mb-16">{LANGUAGE.PORTFOLIO_PAGE.DESCRIPTION}</p>
             <PortfolioCardList card={cardData}/>
             <Link 

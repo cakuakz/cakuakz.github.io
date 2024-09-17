@@ -2,8 +2,8 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "../component/internalIcons";
 
 const Footer = () => {
     return ( 
-        <div className="App bg-[#1F1F1F] py-20 justify-center space-y-[30px]" id="footer">
-            <h1 className="text-center font-semibold text-[45px] lg:text-[55px] text-white">Wanna make awesome and<br/>impactful Website?</h1>
+        <div className="App bg-[#1F1F1F] dark:bg-[#121212] py-20 justify-center space-y-[30px]" id="footer">
+            <h1 className="text-center font-semibold text-[45px] lg:text-[55px] text-[#dcf6ff]">Wanna make awesome and<br/>impactful Website?</h1>
             <p className="text-center font-medium text-[14px] lg:text-[22px] text-[#CDCCCB]">Contact Me Through</p>
             <div className="flex flex-row justify-center space-x-[25.32px]">
                 <a href="https://github.com/cakuakz" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">

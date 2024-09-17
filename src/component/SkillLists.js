@@ -2,7 +2,7 @@ import SkillCircle from "./SkillCircle";
 
 const SkillLists = ({ skills }) => {
     return ( 
-        <div className="flex flex-col space-y-5 lg:grid lg:grid-cols-2 xl:flex xl:flex-row justify-center items-center mb-12 xl:space-x-10">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 xl:flex xl:flex-row justify-center items-center mb-12 xl:space-x-10">
             {skills.map((skill, index) => (
                 <SkillCircle 
                     key={index}

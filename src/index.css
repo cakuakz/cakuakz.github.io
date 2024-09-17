@@ -12,6 +12,10 @@ html {
     font-family: 'Poppins';
 }
 
+.dark .App {
+    background-color: #1F1F1F;
+}
+
 .name {
     position: relative;
     width: max-content;
@@ -33,11 +37,19 @@ html {
     animation: typewriter 2s ease-in 1s forwards;
 }
 
+.dark .name::before {
+    background: #1F1F1F;
+}
+
 .name::after {
     width: 0.2rem;
     height: auto;
     background: white;
     animation: typewriter 2s ease-in 1s forwards
+}
+
+.dark .name::after {
+    background: #1F1F1F;
 }
 
 @keyframes typewriter {
@@ -56,6 +68,10 @@ html {
 
 .links:hover::after {
     @apply w-[100%]
+}
+
+.dark .links::after {
+    @apply bg-[#79DCFF]
 }
 
 
@@ -79,7 +95,6 @@ html {
 .blur-none {
     filter: none;
 }
-
 
 .arrow-sided {
     color: #47689C;
@@ -129,7 +144,11 @@ html {
     border-radius: 0.5rem;
     margin-bottom: 2rem;
     transition: transform 0.2s ease-in-out;
-    animation-duration: 100ms;
+    animation-duration: 100ms
+}
+
+.dark .arrow-button {
+    color: black;
 }
 
 .arrow-button:hover {

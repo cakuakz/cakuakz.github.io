@@ -11,6 +11,7 @@ const LANGUAGE = {
         DOWNLOAD_CV: 'DOWNLOAD RESUME'
     },
     ABOUT_PAGE: {
+        LANGUAGE: "LANGUAGE",
         ABOUT: [
             {
                 NUMBER: 7,

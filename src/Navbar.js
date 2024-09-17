@@ -1,10 +1,12 @@
-import { Button } from "@nextui-org/react";
+import { Button, Switch } from "@nextui-org/react";
 import LANGUAGE from "./utils/languange";
 import { capitalCase } from "text-case";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import useSidebar from "./utils/hooks/useSidebar";
+import { useEffect, useState } from "react";
+import { MoonIcon, SunIcon } from "./component/internalIcons";
 
 const itemVariants = {
     open: {
@@ -38,6 +40,18 @@ const navbarVariants = {
 
 const Navbar = () => {
     const { isSidebarVisible, setIsSidebarVisible, handleSidebar } = useSidebar()
+    const  [theme, setTheme] = useState("light")
+    const handleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark")
+    }
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark")
+        } else {
+            document.documentElement.classList.remove("dark")
+        }
+    }, [theme])
 
     return (
         <header className="App bg-white fixed top-0 right-0 z-50 lg:opacity-100 w-screen">
@@ -79,7 +93,18 @@ const Navbar = () => {
                     </motion.li>
                 </motion.ul>
             </motion.div>
-            <nav className="hidden lg:flex lg:justify-end lg:items-end lg:py-[30px] lg:pr-9 lg:mx-auto xl:px-28">
+            <nav className="hidden items-center lg:flex lg:justify-between lg:items-end lg:py-[30px] lg:pr-9 lg:mx-auto xl:px-28">
+                <Switch
+                    defaultSelected
+                    size="lg"
+                    color="warning"
+                    classNames={{
+                        wrapper: "bg-slate-600"
+                    }}
+                    startContent={<SunIcon />}
+                    endContent={<MoonIcon />}
+                    onValueChange={handleTheme}
+                />
                 <ul className="flex items-center space-x-4">
                     <li>
                         <NavLink to="/" className='links active:text-gray-600 focus:text-gray-400'>{capitalCase(LANGUAGE.NAVBAR.HOME)}</NavLink>

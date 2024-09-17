@@ -25,7 +25,7 @@ const NumberPortfolio = ({ title, number, key }) => {
 
     return ( 
         <div className="flex flex-col justify-items-center text-center mb-32" key={key} data-aos="fade-up">
-            <h1 className="text-[#404040] text-9xl font-medium">{Math.round(currentValue)}</h1>
+            <h1 className="text-[#404040] dark:text-[#dcf6ff] text-9xl font-medium">{Math.round(currentValue)}</h1>
             <p className="text-[#a59c95] text-base">{title}</p>
         </div>
      );

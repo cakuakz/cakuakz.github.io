@@ -78,7 +78,7 @@ const Navbar = () => {
                 initial="closed"
                 animate={isSidebarVisible ? "open" : "closed"}
                 variants={navbarVariants}
-                className="lg:hidden fixed top-0 left-0 w-full bg-white"
+                className="lg:hidden fixed top-0 left-0 w-full bg-white dark:bg-[#121212]"
             >
                 <motion.ul
                     className="flex flex-col items-center space-y-4 pt-6 pb-2"

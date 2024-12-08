@@ -6,8 +6,8 @@ const Home = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = `${process.env.PUBLIC_URL}/rafiresume.pdf`
-        link.download = 'rafiresume.pdf'
+        link.href = `${process.env.PUBLIC_URL}/Rafi-Irfansyah-December-2024.pdf`
+        link.download = 'Rafi-Current-Resume.pdf'
         link.click()
       }
 
